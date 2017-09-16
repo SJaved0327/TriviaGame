@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <!-- CSS File -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- Google fonts -->
+    <!--<link href="https://fonts.googleapis.com/css?family=Arimo|Lobster" rel="stylesheet">-->
+  </head>
+  <body>
+
+    <!-- Totally Trivial Trivia -->
+    <div class="jumbotron col-lg-12">
+      <h1 class="display-3 text-center">Trivia and The City</h1>
+      <hr class="my-4">
+      <div id="startTimer">
+        <button type="button" class="btn btn-secondary btn-lg">Start!</button>
+      </div>
+    </div>
+    
+    <!-- Main Text Container -->
+    <div class="container">
+
+      <!-- Question Div -->
+      <div class="questionDiv">
+
+        <!-- Question 1 -->
+        <div class="card-header">
+          <strong>1. In the final season of Sex and The City, which big-name magazine hires Carrie?</strong>
+        </div>
+
+        <!-- Answer Choices -->
+        <div class="card-body">
+          <div class="control-group">
+            <div class="controls">
+              <label class="radio">
+                <input type="radio" name="user[role]" id="user_role_managing_editor" value="Managing editor" checked>
+                  The New Yorker
+              </label>
+              <label class="radio">
+                <input type="radio" name="user[role]" id="user_role_area_editor" value="Area editor">
+                  Elle
+              </label>
+              <label class="radio">
+                <input type="radio" name="user[role]" id="user_role_author_or_referee" value="Author or referee">
+                  Vogue
+              </label>
+              <label class="radio">
+                <input type="radio" name="user[role]" id="user_role_author_or_referee" value="Author or referee">
+                  Cosmopolitan
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Question Div -->
+      <div class="questionDiv">
+
+        <!-- Question 2 -->
+        <div class="card-header">
+          <strong>2. After which famous actress did Charlotte name her dog?</strong>
+        </div>
+
+        <!-- Answer Choices -->
+        <div class="card-body">
+          <div class="control-group">
+            <div class="controls">
+              <label class="radio">
+                <input type="radio" name="user[role]" id="user_role_managing_editor" value="Managing editor" checked>
+                  Zsa Zsa Gabor
+              </label>
+              <label class="radio">
+                <input type="radio" name="user[role]" id="user_role_area_editor" value="Area editor">
+                  Elizabeth Taylor
+              </label>
+              <label class="radio">
+                <input type="radio" name="user[role]" id="user_role_author_or_referee" value="Author or referee">
+                  Audrey Hepburn
+              </label>
+              <label class="radio">
+                <input type="radio" name="user[role]" id="user_role_author_or_referee" value="Author or referee">
+                  Rita Hayworth
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+      
+
+
+  	<!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!-- JavaScript File -->
+  	<script type="text/javascript" src="assets/javascript/app.js"></script>
+  </body>
+</html>
