@@ -1,8 +1,12 @@
 /* Google Fonts */
-
+body{
+	font-family: 'PT Serif', serif;
+}
 h1{
 	font-family: 'Fredericka the Great', cursive;
 }
+
+/* Gen Styling */
 
 input{
 	margin: 5px;
@@ -12,23 +16,39 @@ input{
 	padding-bottom: 20px;
 }
 
+/*
+#maintext-Container{
+	opacity: 0.5;
+	background: url(image.jpg);
+  	opacity: 0.5;
+  	top: 0;
+  	left: 0;
+  	bottom: 0;
+ 	 right: 0;
+ 	 position: absolute;
+  	z-index: -1;   
+}
+*/
+
 #questionDiv{
 	visibility: hidden;
-	font-family: 'EB Garamond', serif;
 	border-style: solid;
-	border-width: 1px;
+	border-width: 0.5px;
 	border-color: gray;
 	margin: 30px;
-}
-
-#startTimer{
-	text-align: center;
+	background-image: url(../images/vale-finishedNYC.png);
+	background-size: 100% 100%;
 }
 
 footer{
+	visibility: hidden;
+}
+
+#startTimer, footer{
 	text-align: center;
 }
 
+/* Coloring */
 .jumbotron{
 	background-color: pink;
 }
