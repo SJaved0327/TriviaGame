@@ -20,7 +20,7 @@ var intervalId;
 function StartGame() {
 
 	intervalId = setInterval(decrement, 1000);
-	$("#maintext-Container").css('visibility', 'visible');
+	$("#questionDiv").css('visibility', 'visible');
 };
 
 //Decrement function starts at number (30) and decreases number by 1 until 0
@@ -119,9 +119,23 @@ function EndGame(){
 	$("#maintext-Container").append("<h2> Unanswered: " + counter.unanswered + "</h2>");
 
 	//#startTimer is replaced with a gif
-    $("#startTimer").html(
+	//great job gif
+    if (counter.correct >= 5){
+
+    	$("#startTimer").html(
     	"<img src='https://i.giphy.com/media/p9MrGLrUDrU1a/giphy.webp' />"
-    );
+    	);
+
+    //meh job gif
+    }else if (counter.correct >= 3){
+
+
+    //womp womp gif
+    }else if (counter.correct = 0){
+
+
+    }
+    
 
 };
 

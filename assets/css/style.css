@@ -4,24 +4,17 @@ h1{
 	font-family: 'Fredericka the Great', cursive;
 }
 
-#questionDiv{
-	font-family: 'EB Garamond', serif;
-
-}
-
 input{
 	margin: 5px;
-}
-
-#maintext-Container{
-	visibility: hidden;
 }
 
 .display-3{
 	padding-bottom: 20px;
 }
 
-.questionDiv{
+#questionDiv{
+	visibility: hidden;
+	font-family: 'EB Garamond', serif;
 	border-style: solid;
 	border-width: 1px;
 	border-color: gray;
