@@ -22,10 +22,10 @@
     </div>
     
     <!-- Main Text Container -->
-    <div class="container">
+    <div id="maintext-Container" class="container">
 
       <!-- Question Div -->
-      <div class="questionDiv">
+      <form id="questionDiv" name="questionDiv">
 
         <!-- Question 1 -->
         <div class="card-header">
@@ -34,24 +34,18 @@
 
         <!-- Answer Choices -->
         <div class="card-body">
-          <form>
-            <input type="radio" name="Question1" value="NewYorker" checked> 
+            <input type="radio" name="question1" value="false" checked> 
               New Yorker
             <br>
-            <input type="radio" name="Question1" value="Elle"> 
+            <input type="radio" name="question1" value="false"> 
               Elle
             <br>
-            <input type="radio" name="Question1" value="Elle"> 
+            <input type="radio" name="question1" value="true"> 
               Vogue
             <br>
-            <input type="radio" name="Question1" value="Elle"> 
+            <input type="radio" name="question1" value="false"> 
               Cosmopolitan
-          </form>
         </div>
-      </div>
-      
-      <!-- Question Div -->
-      <div class="questionDiv">
 
         <!-- Question 2 -->
         <div class="card-header">
@@ -60,21 +54,30 @@
 
         <!-- Answer Choices -->
         <div class="card-body">
-          <form>
-            <input type="radio" name="Question1" value="NewYorker" checked> 
-              New Yorker
+            <input type="radio" name="question2" value="false" checked> 
+              Zsa Zsa Gabour
             <br>
-            <input type="radio" name="Question1" value="Elle"> 
-              Elle
+            <input type="radio" name="question2" value="true"> 
+              Elizabeth Taylor
             <br>
-            <input type="radio" name="Question1" value="Elle"> 
-              Vogue
+            <input type="radio" name="question2" value="false"> 
+              Audrey Hepburn
             <br>
-            <input type="radio" name="Question1" value="Elle"> 
-              Cosmopolitan
-          </form>
+            <input type="radio" name="question2" value="false"> 
+              Rita Hayworth
         </div>
-    </div>
+    </form>
+
+
+
+
+
+
+    <!-- Footer + Done Button -->
+    <footer>
+      <button type="button" id="doneButton" class="btn btn-primary btn-lg">Done!
+      </button>
+    </footer>
 
   </div>
       

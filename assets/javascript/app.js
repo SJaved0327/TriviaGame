@@ -2,17 +2,36 @@
 //----------------------------------------
 
 
-
 //Functions
 //----------------------------------------
 
 
 
 
-
-
 //Gameplay
 //----------------------------------------
+
+//When game is complete
+
+$("#doneButton").click(function(){
+	var question1 = document.questionDiv.question1.value;
+	console.log(question1);
+
+});
+
+/*
+if (time = 0){
+
+	//run same end function
+
+};
+*/
+
+//$("#maintext-Container").style.visibility = "visible";
+
+
+
+//getElementById("#asdfads").value = 
 
 //intro page displays
 
