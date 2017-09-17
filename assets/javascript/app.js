@@ -5,20 +5,11 @@ var wrong = 0;
 var unanswered = 0;
 
 
-
 //Functions
 //----------------------------------------
 
+function EndGame(){
 
-
-
-//Gameplay
-//----------------------------------------
-
-//When game is complete
-
-$("#doneButton").click(function(){
-	
 	//check value of question 1
 	var question1 = document.questionDiv.question1.value;
 	
@@ -61,19 +52,23 @@ $("#doneButton").click(function(){
 		unanswered++;
 	};
 
-
-});
-
-/*
-if (time = 0){
-
-	//run same end function
+	alert("Correct: " + correct);
+	alert("Wrong: " + wrong);
+	alert("Unanswered: " + unanswered);
 
 };
-*/
 
-//$("#maintext-Container").style.visibility = "visible";
 
+//Gameplay
+//----------------------------------------
+
+//When game is complete
+
+$("#doneButton").click(function(){
+
+	EndGame();
+
+});
 
 
 //getElementById("#asdfads").value = 
