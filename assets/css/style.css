@@ -1,5 +1,20 @@
+/* Google Fonts */
+
+h1{
+	font-family: 'Fredericka the Great', cursive;
+}
+
+#questionDiv{
+	font-family: 'EB Garamond', serif;
+
+}
+
 input{
 	margin: 5px;
+}
+
+#maintext-Container{
+	visibility: hidden;
 }
 
 .display-3{

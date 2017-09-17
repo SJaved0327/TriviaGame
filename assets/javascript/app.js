@@ -2,23 +2,25 @@
 //---------------------------------------------
 
 //counters start at 0
-var correct = 0;
-var wrong = 0;
-var unanswered = 0;
+var counter = {
+	correct: 0,
+	wrong: 0,
+	unanswered:0
+};
 
 //number starts at 30
 var number = 30;
 //stores interval value
 var intervalId;
 
-
-
 //Functions
 //---------------------------------------------
 
 //StartGame function sets up intervalId and runs decrement functions every second
 function StartGame() {
+
 	intervalId = setInterval(decrement, 1000);
+	$("#maintext-Container").css('visibility', 'visible');
 };
 
 //Decrement function starts at number (30) and decreases number by 1 until 0
@@ -61,59 +63,60 @@ function EndGame(){
 	//if value of question1 is correct:
 	if (question1 === "correct"){
 		//correct counter increases by 1 and stores its value
-		correct++;
+		counter.correct++;
 	}
 	//else if value of question 1 is wrong:
 	else if (question1 === "wrong"){
 		//wrong counter increases by 1 and stores its value
-		wrong++;
+		counter.wrong++;
 	}
 	//else no values match: 
 	else {
 		//then unanswered increases by 1 and stores its value
-		unanswered++;
+		counter.unanswered++;
 	};
 
 	//---Question 2 Check---
 	//if value of question2 is correct:
 	if (question2 === "correct"){
 		//correct counter increases by 1 and stores its value
-		correct++;
+		counter.correct++;
 	}
 	//else if value of question 2 is wrong:
 	else if (question2 === "wrong"){
 		//wrong counter increases by 1 and stores its value
-		wrong++;
+		counter.wrong++;
 	}
 	//else no values match:
 	else {
 		//then unanswered increases by 1 and stores its value
-		unanswered++;
+		counter.unanswered++;
 	};
 
 	//---Question 3 Check---
 	//if value of question3 is correct:
 	if (question3 === "correct"){
 		//correct counter increases by 1 and stores its value
-		correct++;
+		counter.correct++;
 	}
 	//else if value of question 3 is wrong:
 	else if (question3 === "wrong"){
 		//wrong counter increases by 1 and stores its value
-		wrong++;
+		counter.wrong++;
 	}
 	//else no values match:
 	else {
 		//then unanswered increases by 1 and stores its value
-		unanswered++;
+		counter.unanswered++;
 	};
 
 	//#maintext-Container is replaced wtih final scores
 	$("#maintext-Container").html("<h2>" + "</h2>");
 	$("#maintext-Container").addClass("text-center");
-	$("#maintext-Container").append("<h2> Correct: " + correct + "</h2>");
-	$("#maintext-Container").append("<h2> Wrong: " + wrong + "</h2>");
-	$("#maintext-Container").append("<h2> Unanswered: " + unanswered + "</h2>");
+	//cycle through the counter object and append the final scores
+	$("#maintext-Container").append("<h2> Correct: " + counter.correct + "</h2>");
+	$("#maintext-Container").append("<h2> Wrong: " + counter.wrong + "</h2>");
+	$("#maintext-Container").append("<h2> Unanswered: " + counter.unanswered + "</h2>");
 
 	//#startTimer is replaced with a gif
     $("#startTimer").html(
