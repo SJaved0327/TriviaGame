@@ -32,6 +32,7 @@ input{
 
 footer{
 	visibility: hidden;
+	padding-bottom: 15px;
 }
 
 #startTimer, footer{

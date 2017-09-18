@@ -48,9 +48,6 @@ function decrement() {
 //alerts user of score
 function EndGame(){
 
-	//stop the timer!
-	clearInterval(intervalId);
-
 	//check value of question 1
 	var question1 = document.questionDiv.question1.value;
 	
@@ -152,8 +149,6 @@ function EndGame(){
 	};
 
 
-	//clear timer div
-	$("#startTimer").html("");
 	//#maintext-Container is replaced wtih final scores
 	$("#maintext-Container").html("<h2>" + "</h2>");
 	$("#maintext-Container").addClass("text-center");
@@ -163,34 +158,35 @@ function EndGame(){
 	$("#maintext-Container").append("<h2> Unanswered: " + counter.unanswered + "</h2>" + "<br>");
 
 	//#startTimer is replaced with a gif
+	//stop the timer!
+	clearInterval(intervalId);
+	
 	//great job gif
-    if (counter.correct = 5){
+    if (counter.correct === 5){
     	//Big puts on the shoe
-    	$("#maintext-Container").append(
+    	$("#startTimer").html(
     	"<img src='https://i.giphy.com/media/p9MrGLrUDrU1a/giphy.webp' />"
     	);
 
     //meh job gif
     }else if (counter.correct >= 3){
     	//Black dresses
-    	$("#maintext-Container").append(
+    	$("#startTimer").html(
     	"<img src='https://media.giphy.com/media/4yRAUN2XxuQec/giphy.gif' />"
     	);
 
     //womp womp gif
     }else if (counter.correct >= 1){
     	//Sideways looks
-    	$("#maintext-Container").append(
+    	$("#startTimer").html(
     	"<img src='https://media.giphy.com/media/caH3HQRogbU0U/giphy.gif' />"
     	);
 
     }else if (counter.correct = 0){
     	//Valium quote
-    	$("#maintext-Container").append(
+    	$("#startTimer").html(
     	"<img src='https://media1.popsugar-assets.com/files/thumbor/0Wzb6VuyFJm28bl22FjfNxRA8iE/fit-in/1200x630/filters:format_auto-!!-:strip_icc-!!-:fill-!white!-/2015/03/25/964/n/1922283/ee2540cdcfd41388_sex-and-the-city-celebrity-watchdog-3/i/Blissful-Statement.gif' />"
     	);
-
-
 
     }
     
