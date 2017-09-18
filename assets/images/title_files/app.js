@@ -150,37 +150,45 @@ function EndGame(){
 
 
 	//#maintext-Container is replaced wtih final scores
-	$("#maintext-Container").html("");
+	$("#maintext-Container").html("<h2>" + "</h2>");
 	$("#maintext-Container").addClass("text-center");
 	//cycle through the counter object and append the final scores
-	$("#maintext-Container").append("<h4> Correct: " + counter.correct + "</h4>");
-	$("#maintext-Container").append("<h4> Wrong: " + counter.wrong + "</h4>");
-	$("#maintext-Container").append("<h4> Unanswered: " + counter.unanswered + "</h4>" + "<br>");
+	$("#maintext-Container").append("<h2> Correct: " + counter.correct + "</h2>");
+	$("#maintext-Container").append("<h2> Wrong: " + counter.wrong + "</h2>");
+	$("#maintext-Container").append("<h2> Unanswered: " + counter.unanswered + "</h2>" + "<br>");
 
 	//#startTimer is replaced with a gif
 	//stop the timer!
 	clearInterval(intervalId);
 
-	//5 correct gif
+	$(".jumbotron").css('height','500px');
+	//great job gif
     if (counter.correct === 5){
     	//Big puts on the shoe
     	$("#startTimer").html(
     	"<img src='https://i.giphy.com/media/p9MrGLrUDrU1a/giphy.webp' />"
     	);
 
-    //3-4 correct gif
+    //meh job gif
     }else if (counter.correct >= 3){
     	//Black dresses
     	$("#startTimer").html(
     	"<img src='https://media.giphy.com/media/4yRAUN2XxuQec/giphy.gif' />"
     	);
 
-    //0-2 correct gif
-    }else if (counter.correct >= 0){
+    //womp womp gif
+    }else if (counter.correct >= 1){
     	//Sideways looks
     	$("#startTimer").html(
-    	"<img src='https://i.giphy.com/media/caH3HQRogbU0U/giphy.webp' />"
+    	"<img src='https://media.giphy.com/media/caH3HQRogbU0U/giphy.gif' />"
     	);
+
+    }else if (counter.correct = 0){
+    	//Valium quote
+    	$("#startTimer").html(
+    	"<img src='https://media1.popsugar-assets.com/files/thumbor/0Wzb6VuyFJm28bl22FjfNxRA8iE/fit-in/1200x630/filters:format_auto-!!-:strip_icc-!!-:fill-!white!-/2015/03/25/964/n/1922283/ee2540cdcfd41388_sex-and-the-city-celebrity-watchdog-3/i/Blissful-Statement.gif' />"
+    	);
+
     }
     
 
